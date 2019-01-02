@@ -1,5 +1,5 @@
-h1 {
-    color: red;
-  }
+@import "vendors/all";
+@import "global";
+@import "pages/all";
+@import "components/all";
 
-  .pac-container:after{display:none !important;}

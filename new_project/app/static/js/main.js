@@ -1,3 +1,2 @@
-const sayHello = () => alert('hi');
-sayHello();
+import './pages/index';
 
