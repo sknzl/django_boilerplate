@@ -1,0 +1,23 @@
+{% load compress %}
+{% load static %}
+<html>
+    <head>
+        <title>New Project</title>
+        {% compress css %}
+        <link href="{% static 'css/main.scss' %}"  type="text/x-scss" rel="stylesheet">
+        {% endcompress %}
+
+        {% compress js %}
+        <script type="module" src="{% static 'js/main.js' %}"></script>
+        {% endcompress %}
+
+    </head>
+    <body>
+        <h1> New Project </h1>
+        <li><a href="{% url 'index'%}">Home</a></li>
+        <div class="page-wrapper">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
