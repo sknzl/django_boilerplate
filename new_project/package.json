@@ -1,7 +1,7 @@
 {
   "private": true,
   "devDependencies": {
-    "node-sass": "~3.10",
+    "node-sass": "~4.13",
     "postcss-cli": "~2.6",
     "autoprefixer": "~6.5",
     "browserify": "~13.1",
